@@ -1,0 +1,25 @@
+# #non recursive
+# n=int(input("enter the number:"))
+# n1,n2=0,1
+# term=n2
+# count=1
+# while count <= n:
+#     print(term)
+#     count+=1
+#     n1,n2=n2,term
+#     term=n1+n2
+#     print()
+
+# recursive
+def fibonacci(n):
+    if n<0:
+        return[]
+    elif n==0:
+        return 0
+    elif n==0 or n==1:
+        return 1
+    else:
+        return fibonacci (n-1)+ fibonacci(n-2)
+    
+print(fibonacci(8))
+
